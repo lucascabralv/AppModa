@@ -195,7 +195,7 @@ function appModa(){
     function saveRoupa(roupa){
       if(roupa){
         const savedRoupas = getSavedRoupas();
-        savedRoupas.insert(roupa);
+        savedRoupas.push(roupa);
         localStorage.setItem('roupas', JSON.stringify(savedRoupas));
       }
     }
